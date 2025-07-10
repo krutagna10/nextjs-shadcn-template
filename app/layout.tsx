@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${josefinSans.className} } antialiased`}>
+      <body className={`${josefinSans.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
