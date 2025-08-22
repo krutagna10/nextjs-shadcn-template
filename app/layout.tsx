@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
 import { ThemeProvider } from "@/context/theme-provider";
-import { ModeToggle } from "@/components/mode-toggle";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
@@ -27,7 +27,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Header />
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
